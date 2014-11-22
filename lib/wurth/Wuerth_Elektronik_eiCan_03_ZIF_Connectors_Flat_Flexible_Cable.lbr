@@ -176,8 +176,8 @@ Copyright: Würth Elektronik</description>
 <wire x1="13.2" y1="-3.9" x2="13.2" y2="0.1" width="0.127" layer="21"/>
 <wire x1="13.2" y1="0.1" x2="-13.2" y2="0.1" width="0.127" layer="51"/>
 <wire x1="-13.2" y1="0.1" x2="-13.2" y2="-3.9" width="0.127" layer="21"/>
-<smd name="42" x="11.68" y="-1.38" dx="2.7" dy="3" layer="1"/>
-<smd name="41" x="-11.68" y="-1.38" dx="2.7" dy="3" layer="1"/>
+<smd name="42" x="11.7" y="-1.38" dx="2.7" dy="3" layer="1"/>
+<smd name="41" x="-11.7" y="-1.38" dx="2.7" dy="3" layer="1"/>
 <smd name="1" x="-9.75" y="0.6" dx="0.3" dy="1.2" layer="1"/>
 <smd name="2" x="-9.25" y="0.6" dx="0.3" dy="1.2" layer="1"/>
 <smd name="3" x="-8.75" y="0.6" dx="0.3" dy="1.2" layer="1"/>
@@ -220,8 +220,10 @@ Copyright: Würth Elektronik</description>
 <smd name="40" x="9.75" y="0.6" dx="0.3" dy="1.2" layer="1"/>
 <text x="-15.744" y="2.8101" size="1.27" layer="25">&gt;NAME</text>
 <text x="-15.744" y="-6.3866" size="1.27" layer="27">&gt;VALUE</text>
-<pad name="P$1" x="-12" y="-1" drill="0.4"/>
-<pad name="P$2" x="12" y="-1" drill="0.4"/>
+<pad name="P$1" x="-12.5" y="-0.5" drill="0.4"/>
+<pad name="P$2" x="12.5" y="-0.5" drill="0.4"/>
+<pad name="P$3" x="-12.5" y="-2" drill="0.4"/>
+<pad name="P$4" x="12.5" y="-2" drill="0.4"/>
 </package>
 <package name="687106144821">
 <description>&lt;b&gt;WR-FPC 0.5mm SMT ZIF Horizontal Bottom Contact Low Profil 1.2mm Height, 6 Pins</description>
@@ -12254,7 +12256,7 @@ Copyright: Würth Elektronik</description>
 <connect gate="G$1" pin="27" pad="27"/>
 <connect gate="G$1" pin="28" pad="28"/>
 <connect gate="G$1" pin="29" pad="29"/>
-<connect gate="G$1" pin="3" pad="3 41 42 P$1 P$2"/>
+<connect gate="G$1" pin="3" pad="3 41 42 P$1 P$2 P$3 P$4"/>
 <connect gate="G$1" pin="30" pad="30"/>
 <connect gate="G$1" pin="31" pad="31"/>
 <connect gate="G$1" pin="32" pad="32"/>
