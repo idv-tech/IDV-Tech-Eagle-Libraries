@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -319,11 +319,10 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <pad name="8" x="2.54" y="1.27" drill="0.9144" diameter="1.6"/>
 <pad name="9" x="5.08" y="-1.27" drill="0.9144" diameter="1.6"/>
 <pad name="10" x="5.08" y="1.27" drill="0.9144" diameter="1.6"/>
-<text x="-1.016" y="-4.064" size="1.27" layer="21" ratio="10">10</text>
+<text x="-1.016" y="-4.064" size="1.27" layer="21" font="vector" ratio="10">10</text>
 <text x="-10.16" y="5.08" size="1.778" layer="25" ratio="10">&gt;NAME</text>
 <text x="0" y="5.08" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-7.62" y="-1.905" size="1.27" layer="21" ratio="10">1</text>
-<text x="-7.62" y="0.635" size="1.27" layer="21" ratio="10">2</text>
+<text x="-7.62" y="-1.905" size="1.27" layer="21" font="vector" ratio="10">1</text>
 <rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
 <rectangle x1="-5.334" y1="1.016" x2="-4.826" y2="1.524" layer="51"/>
 <rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
@@ -694,19 +693,19 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <pad name="G$4" x="8.065" y="0" drill="1.6"/>
 </package>
 <package name="PMOD">
-<wire x1="2.8" y1="13.92" x2="5.3" y2="13.92" width="0.2032" layer="21"/>
-<wire x1="5.3" y1="13.92" x2="5.3" y2="-1.22" width="0.2032" layer="21"/>
-<wire x1="5.3" y1="-1.22" x2="2.8" y2="-1.22" width="0.2032" layer="21"/>
-<wire x1="2.8" y1="-1.22" x2="2.8" y2="13.92" width="0.2032" layer="21"/>
-<wire x1="5.3" y1="7.62" x2="11.3" y2="7.62" width="0.127" layer="51"/>
-<wire x1="5.3" y1="5.08" x2="11.3" y2="5.08" width="0.127" layer="51"/>
-<wire x1="5.3" y1="2.54" x2="11.3" y2="2.54" width="0.127" layer="51"/>
-<wire x1="5.3" y1="10.16" x2="11.3" y2="10.16" width="0.127" layer="51"/>
-<wire x1="5.3" y1="12.7" x2="11.3" y2="12.7" width="0.127" layer="51"/>
-<wire x1="8.2" y1="13.985" x2="8.2" y2="-1.185" width="0.127" layer="51"/>
-<wire x1="13.8" y1="13.92" x2="13.8" y2="-1.22" width="0.127" layer="51"/>
-<wire x1="5.3" y1="13.92" x2="13.8" y2="13.92" width="0.127" layer="51"/>
-<wire x1="5.3" y1="-1.22" x2="13.8" y2="-1.22" width="0.127" layer="51"/>
+<wire x1="2.55" y1="13.92" x2="5.05" y2="13.92" width="0.2032" layer="21"/>
+<wire x1="5.05" y1="13.92" x2="5.05" y2="-1.22" width="0.2032" layer="21"/>
+<wire x1="5.05" y1="-1.22" x2="2.55" y2="-1.22" width="0.2032" layer="21"/>
+<wire x1="2.55" y1="-1.22" x2="2.55" y2="13.92" width="0.2032" layer="21"/>
+<wire x1="5.05" y1="7.62" x2="11.05" y2="7.62" width="0.127" layer="51"/>
+<wire x1="5.05" y1="5.08" x2="11.05" y2="5.08" width="0.127" layer="51"/>
+<wire x1="5.05" y1="2.54" x2="11.05" y2="2.54" width="0.127" layer="51"/>
+<wire x1="5.05" y1="10.16" x2="11.05" y2="10.16" width="0.127" layer="51"/>
+<wire x1="5.05" y1="12.7" x2="11.05" y2="12.7" width="0.127" layer="51"/>
+<wire x1="7.95" y1="13.985" x2="7.95" y2="-1.185" width="0.127" layer="51"/>
+<wire x1="13.55" y1="13.92" x2="13.55" y2="-1.22" width="0.127" layer="51"/>
+<wire x1="5.05" y1="13.92" x2="13.55" y2="13.92" width="0.127" layer="51"/>
+<wire x1="5.05" y1="-1.22" x2="13.55" y2="-1.22" width="0.127" layer="51"/>
 <pad name="P6" x="-1.27" y="12.7" drill="1.016" diameter="1.5875" shape="octagon" rot="R270"/>
 <pad name="P12" x="1.27" y="12.7" drill="1.016" diameter="1.5875" shape="octagon" rot="R270"/>
 <pad name="P5" x="-1.27" y="10.16" drill="1.016" diameter="1.5875" shape="octagon" rot="R270"/>
@@ -731,7 +730,7 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <rectangle x1="-1.524" y1="2.286" x2="-1.016" y2="2.794" layer="51" rot="R270"/>
 <rectangle x1="-1.524" y1="4.826" x2="-1.016" y2="5.334" layer="51" rot="R270"/>
 <rectangle x1="1.016" y1="4.826" x2="1.524" y2="5.334" layer="51" rot="R270"/>
-<wire x1="5.3" y1="0" x2="11.3" y2="0" width="0.127" layer="51"/>
+<wire x1="5.05" y1="0" x2="11.05" y2="0" width="0.127" layer="51"/>
 <pad name="P1" x="-1.27" y="0" drill="1.016" diameter="1.5875" shape="octagon" rot="R270"/>
 <pad name="P7" x="1.27" y="0" drill="1.016" diameter="1.5875" shape="octagon" rot="R270"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51" rot="R270"/>

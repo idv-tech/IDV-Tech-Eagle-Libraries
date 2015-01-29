@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -268,7 +268,7 @@ MSOP&lt;br&gt;
 <wire x1="-1.48" y1="1.28" x2="-1.27" y2="1.48" width="0.1524" layer="21" curve="-92.794362"/>
 <wire x1="1.28" y1="1.48" x2="1.48" y2="1.27" width="0.1524" layer="21" curve="-92.794362"/>
 <wire x1="1.48" y1="-1.28" x2="1.26" y2="-1.49" width="0.1524" layer="21" curve="-92.773556"/>
-<circle x="-0.85" y="-0.87" radius="0.325" width="0.254" layer="51"/>
+<circle x="-0.85" y="-0.87" radius="0.325" width="0.254" layer="21"/>
 <smd name="1" x="-0.975" y="-2.25" dx="0.4" dy="1.1" layer="1"/>
 <smd name="2" x="-0.325" y="-2.25" dx="0.4" dy="1.1" layer="1"/>
 <smd name="3" x="0.325" y="-2.25" dx="0.4" dy="1.1" layer="1"/>
@@ -287,6 +287,7 @@ MSOP&lt;br&gt;
 <rectangle x1="0.125" y1="1.55" x2="0.525" y2="2.45" layer="51"/>
 <rectangle x1="-0.525" y1="1.55" x2="-0.125" y2="2.45" layer="51"/>
 <rectangle x1="-1.175" y1="1.55" x2="-0.775" y2="2.45" layer="51"/>
+<circle x="-1.65" y="-2.27" radius="0.2" width="0.254" layer="21"/>
 </package>
 <package name="MSOP10">
 <description>&lt;b&gt;10-Lead Mini Small Outline Package [MSOP]&lt;/b&gt; (RM-10)&lt;p&gt;
@@ -703,11 +704,11 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="-1.447" y1="0.81" x2="-1.403" y2="0.81" width="0.1524" layer="21"/>
 <wire x1="0.497" y1="-0.81" x2="0.453" y2="-0.81" width="0.1524" layer="21"/>
 <circle x="-0.94" y="-0.31" radius="0.15" width="0.15" layer="21"/>
-<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.6" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.6" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.6" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.6" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3" dx="0.6" dy="1.2" layer="1"/>
 <text x="-2" y="-1" size="0.6096" layer="25" rot="R90">&gt;NAME</text>
 <text x="2.315" y="-1.537" size="0.6096" layer="27" rot="R90">&gt;VALUE</text>
 <rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
@@ -1259,9 +1260,9 @@ Source. http://cache.national.com/ds/LM/LM2937-2.5.pdf</description>
 <wire x1="1.422" y1="0.81" x2="0.468" y2="0.81" width="0.2032" layer="21"/>
 <wire x1="-1.422" y1="0.81" x2="-1.422" y2="-0.81" width="0.2032" layer="51"/>
 <wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.2032" layer="51"/>
-<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.1" layer="1"/>
-<smd name="2" x="0.95" y="-1.3" dx="0.55" dy="1.1" layer="1"/>
-<smd name="3" x="0" y="1.3" dx="0.55" dy="1.1" layer="1"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.6" dy="1.2" layer="1"/>
+<smd name="2" x="0.95" y="-1.3" dx="0.6" dy="1.2" layer="1"/>
+<smd name="3" x="0" y="1.3" dx="0.6" dy="1.2" layer="1"/>
 <text x="-2" y="-1" size="0.6096" layer="25" rot="R90">&gt;NAME</text>
 <text x="2.5" y="-1" size="0.6096" layer="27" rot="R90">&gt;VALUE</text>
 <rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
@@ -1691,6 +1692,22 @@ Source. http://cache.national.com/ds/LM/LM2937-2.5.pdf</description>
 <rectangle x1="-0.8128" y1="2.5908" x2="-0.4572" y2="3.6068" layer="51"/>
 <rectangle x1="0.4572" y1="2.5908" x2="0.8128" y2="3.6068" layer="51"/>
 <rectangle x1="1.7272" y1="2.5908" x2="2.0828" y2="3.6068" layer="51"/>
+</package>
+<package name="WE-TVS_SOT23-3L">
+<description>TVS Diode Array WE-TVS</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<circle x="-1.083" y="-0.316" radius="0.02" width="0.127" layer="21"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="2.032" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.302" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -3736,7 +3753,7 @@ Source. http://cache.national.com/ds/LM/LM2937-2.5.pdf</description>
 <pin name="GNDI@1" x="15.24" y="-17.78" length="middle" direction="pwr" rot="R180"/>
 <pin name="VDDI" x="15.24" y="17.78" length="middle" direction="pwr" rot="R180"/>
 </symbol>
-<symbol name="WE-TVS_6RTR4">
+<symbol name="TVS_6PIN">
 <wire x1="-8.255" y1="1.905" x2="-7.62" y2="3.175" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="3.175" x2="-6.985" y2="1.905" width="0.254" layer="94"/>
 <wire x1="-6.985" y1="1.905" x2="-7.62" y2="1.905" width="0.254" layer="94"/>
@@ -4137,6 +4154,55 @@ Source. http://cache.national.com/ds/LM/LM2937-2.5.pdf</description>
 <pin name="B3" x="22.86" y="15.24" length="middle" rot="R180"/>
 <pin name="B4" x="22.86" y="17.78" length="middle" rot="R180"/>
 <pin name="VCC@56" x="-22.86" y="-12.7" length="middle"/>
+</symbol>
+<symbol name="TVS_3PIN">
+<wire x1="1.905" y1="-0.508" x2="3.175" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="3.175" y1="-0.508" x2="3.683" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.508" x2="1.397" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="3.175" y1="0.508" x2="1.905" y2="0.508" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0.508" x2="1.397" y2="0" width="0.254" layer="94"/>
+<wire x1="3.175" y1="0.508" x2="3.683" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="-0.508" x2="-1.905" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-0.508" x2="-1.397" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="-0.508" x2="-3.683" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0.508" x2="-3.175" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="0.508" x2="-3.683" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0.508" x2="-1.397" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="0.254" width="0.254" layer="94"/>
+<text x="2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
+<pin name="2" x="-2.54" y="7.62" visible="pad" length="point" direction="pas" rot="R270"/>
+<pin name="1" x="2.54" y="7.62" visible="pad" length="point" direction="pas" rot="R270"/>
+<pin name="GND" x="0" y="-7.62" visible="pad" length="point" direction="pwr" rot="R90"/>
+<polygon width="0.254" layer="94">
+<vertex x="1.905" y="-1.778"/>
+<vertex x="2.54" y="-0.508"/>
+<vertex x="3.175" y="-1.778"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="3.175" y="1.778"/>
+<vertex x="2.54" y="0.508"/>
+<vertex x="1.905" y="1.778"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-3.175" y="-1.778"/>
+<vertex x="-2.54" y="-0.508"/>
+<vertex x="-1.905" y="-1.778"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-1.905" y="1.778"/>
+<vertex x="-2.54" y="0.508"/>
+<vertex x="-3.175" y="1.778"/>
+</polygon>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6972,7 +7038,7 @@ Reference: http://focus.ti.com/lit/ds/symlink/sn74lvc2g06.pdf</description>
 
 -- 3.3 VDC Application&lt;br&gt;</description>
 <gates>
-<gate name="G$1" symbol="WE-TVS_6RTR4" x="0" y="0"/>
+<gate name="G$1" symbol="TVS_6PIN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="WURTH" package="WE-TVS_SOT23-6L">
@@ -7404,6 +7470,47 @@ Voltage Inverters
 <connect gate="G$1" pin="VCC@48" pad="48"/>
 <connect gate="G$1" pin="VCC@56" pad="56"/>
 <connect gate="G$1" pin="VSYNC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WE-TVS_824022" prefix="D">
+<description>&lt;b&gt;TVS Diode Array WE-TVS, Standard Series&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+
+- Low capazity&lt;br&gt;
+- No leakage current&lt;br&gt;
+- Low clamping voltage&lt;br&gt;
+- high ESD voltage protection&lt;br&gt;
+- Uni- and bidirectional protection&lt;br&gt;&lt;br&gt;
+
+-- DC Distribution&lt;br&gt;
+-- Headsets and Accessoires&lt;br&gt;
+-- PDAs&lt;br&gt;
+-- Digital Cameras&lt;br&gt;
+-- MP3-Players&lt;br&gt;
+-- Touch Panels</description>
+<gates>
+<gate name="G$1" symbol="TVS_3PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WE-TVS_SOT23-3L">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT23-3" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
